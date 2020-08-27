@@ -1,0 +1,27 @@
+# --------------------------------
+#  Spring Core
+# --------------------------------
+server:
+  port: ${PORT:8081}
+
+# --------------------------------
+#  Spring Data
+# --------------------------------
+spring.data.cassandra:
+  keyspace-name: petclinic
+  contact-points: localhost
+  port: 9042
+  local-datacenter: datacenter1
+  username: ks_asset
+  password: ks_asset
+  schema-action: CREATE_IF_NOT_EXISTS
+  request:
+    timeout: 10s
+  connection:
+    connect-timeout: 10s
+    init-query-timeout: 10s
+
+datastax.astra:
+  enabled: false
+  secure-connect-bundle: /Users/cedricklunven/Downloads/secure-connect-astrakathon-review.zip
+  
