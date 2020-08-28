@@ -1,15 +1,16 @@
 # spring-petclinic-reactive
-Implementation of the Spring Pet Clinic using Spring Data Cassandra and Spring Weblux
-
-Start the cassandra db
+Implementation of the Spring Pet Clinic backend with :
+- Spring Data Cassandra
+- Spring Weblux
+- Swagger documentation
 
 ```
-docker-compose up -d
+docker-compose build
 ```
 
 Start the App
 ```
-mvn spring-boot:run
+docker-compose up -d
 ```
 
 Access application, it should redirect you to documentation
